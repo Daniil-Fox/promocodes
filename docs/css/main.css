@@ -2372,14 +2372,45 @@ a {
   justify-content: center;
   border: 2px solid #4671d5;
   border-radius: 25px;
-  padding: 18px 42px;
+  padding: 18px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   color: #212730;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.promos-about__btn span {
+  position: relative;
+  z-index: 2;
+}
+.promos-about__btn::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background-color: #4671d5;
+  -webkit-transform: translateY(110%);
+  -ms-transform: translateY(110%);
+  transform: translateY(110%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+@media (any-hover: hover) {
+  .promos-about__btn:hover {
+    color: #fff;
+  }
+  .promos-about__btn:hover::after {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 @media (max-width: 1024px) {
   .promos-about__btn {
-    padding: 18px 32px;
     text-align: center;
   }
 }
@@ -2387,7 +2418,6 @@ a {
   .promos-about__btn {
     max-width: 250px;
     margin: 0 auto;
-    padding: 18px;
   }
 }
 @media (max-width: 576px) {
@@ -2776,9 +2806,15 @@ a {
   }
 }
 .promos-chars__item.active .promos-chars__arr {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+.promos-chars__item.active .promos-chars__arr svg {
+  fill: #e9331d;
+}
+.promos-chars__item.active .promos-chars__heading span {
+  color: #e9331d;
 }
 .promos-chars__heading {
   display: -webkit-box;
@@ -2796,6 +2832,8 @@ a {
   font-size: 16px;
   line-height: 119%;
   color: #8a9397;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
 .promos-chars__arr {
   width: 22px;
@@ -2813,9 +2851,14 @@ a {
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .promos-chars__arr svg {
   fill: #8a9397;
+  -webkit-transition: fill 0.3s ease-out;
+  transition: fill 0.3s ease-out;
 }
 .promos-chars__text {
   -webkit-box-sizing: content-box;

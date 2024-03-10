@@ -71,7 +71,17 @@
 
     &.active {
       .promos-chars__arr {
-        transform: rotate(180deg);
+        transform: rotate(0);
+
+        svg {
+          fill: #e9331d;
+        }
+      }
+
+      .promos-chars__heading {
+        span {
+          color: #e9331d;
+        }
       }
     }
   }
@@ -89,6 +99,8 @@
       font-size: 16px;
       line-height: 119%;
       color: #8a9397;
+
+      transition: color .3s ease-out;
     }
   }
 
@@ -99,9 +111,11 @@
     align-items: center;
     justify-content: center;
     transition: transform .3s ease-out;
+    transform: rotate(-90deg);
 
     svg {
       fill: #8a9397;
+      transition: fill .3s ease-out;
     }
   }
 
