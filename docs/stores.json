@@ -1,0 +1,38 @@
+[
+  {
+    "id" : "0",
+    "src" : "./img/stores/01.png",
+    "name" : "ASOS",
+    "url" : "./promos.html"
+  },
+  {
+    "id" : "1",
+    "src" : "./img/stores/02.png",
+    "name" : "Золотое яблоко",
+    "url" : "./promos.html"
+  },
+  {
+    "id" : "2",
+    "src" : "./img/stores/03.png",
+    "name" : "Перекрёсток",
+    "url" : "./promos.html"
+  },
+  {
+    "id" : "3",
+    "src" : "./img/stores/04.png",
+    "name" : "SOKOLOV",
+    "url" : "./promos.html"
+  },
+  {
+    "id" : "4",
+    "src" : "./img/stores/05.png",
+    "name" : "Четыре лапы",
+    "url" : "./promos.html"
+  },
+  {
+    "id" : "5",
+    "src" : "./img/stores/06.png",
+    "name" : "Бронницкий ювелир",
+    "url" : "./promos.html"
+  }
+]

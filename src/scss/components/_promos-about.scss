@@ -1,0 +1,107 @@
+.promos-about {
+  padding: 45px;
+
+  @include tablet {
+    padding: 20px;
+  }
+
+  @include mobile {
+    padding: 0;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    margin-bottom: 22px;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #e2e2e2;
+    border-radius: 20px;
+    height: 154px;
+    width: 100%;
+    max-width: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 142px;
+      height: auto;
+      object-fit: contain;
+
+      @media (max-width: 850px) {
+        width: 120px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      height: 130px;
+      max-width: 250px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    display: block;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    color: #505050;
+
+    @media (max-width: 850px) {
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      font-size: 18px;
+      margin-bottom: 10px;
+
+    }
+  }
+
+  &__economy {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: #e9331d;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #4671d5;
+    border-radius: 25px;
+    padding: 18px 42px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #212730;
+
+    @include tablet {
+      padding: 18px 32px;
+      text-align: center;
+    }
+
+    @media (max-width: 850px) {
+      max-width: 250px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    @include mobile {
+      padding: 15px 18px;
+      border-radius: 15px;
+    }
+  }
+}

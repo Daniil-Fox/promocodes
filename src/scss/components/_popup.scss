@@ -1,0 +1,247 @@
+.popup {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#000, .4);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  z-index: -10;
+  transition: opacity .3s ease-out, z-index .3s ease-out;
+
+  &.active {
+    z-index: 100;
+    opacity: 1;
+  }
+
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    max-height: 536px;
+    background-color: #fff;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 77px 65px 42px 76px;
+
+
+
+    @media (max-width: 880px) {
+      border-radius: 30px;
+    }
+
+    @include mobile {
+      padding: 20px;
+      border-radius: 20px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    top: 0;
+    right: -15px;
+    transform: translateX(100%);
+    width: 38px;
+    height: 38px;
+
+    @media (max-width: 880px) {
+      transform: unset;
+      top: 10px;
+      right: 15px;
+      width: 20px;
+      height: 20px;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      fill: #fff;
+
+      @media (max-width: 880px) {
+        fill: #000;
+      }
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #505050;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__copy {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #505050;
+
+    a {
+      color: #e9331d;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 404px;
+    height: 62px;
+    position: relative;
+
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__promo {
+    position: relative;
+    z-index: 3;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 48px;
+    border: 2.58px dashed #e9331d;
+    border-radius: 26px;
+    background-color: #fff;
+
+    span {
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      color: #e9331d;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    right: 0;
+    padding: 21px 33px;
+    padding-left: 130px;
+
+    @include mobile {
+      padding-right: 22px;
+    }
+
+    &.active {
+      background-color: #fff;
+      border-color: #e9331d;
+      color: #e9331d;
+      cursor: default;
+    }
+  }
+
+  &__question {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #505050;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+
+    input {
+      position: absolute;
+      left: -1000px;
+      width: 0;
+      height: 0;
+
+
+
+      &:checked {
+        &+label {
+          span {
+            text-decoration: underline;
+            color: currentColor;
+          }
+        }
+      }
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      cursor: pointer;
+
+      &:first-of-type {
+        color: #44982B;
+      }
+
+      &:last-of-type {
+        color: #e9331d;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      span {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        color: #505050;
+        transition: color .3s ease-out;
+      }
+
+      @include hover {
+        span {
+          color: currentColor;
+        }
+      }
+    }
+  }
+}
+
+
+.popup-desc {
+  overflow-y: auto;
+
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #505050;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: var(--font6);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #8a9397;
+  }
+}

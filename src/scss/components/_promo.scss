@@ -1,0 +1,44 @@
+.promo {
+  margin-bottom: 90px;
+
+  @include big-desktop {
+    margin-bottom: 60px;
+  }
+
+  @include tablet {
+    order: 2;
+  }
+
+  @include small-tablet {
+    order: 0;
+    padding-top: 20px;
+  }
+
+  &__title {
+    margin-bottom: 75px;
+
+    @include big-desktop {
+      margin-bottom: 40px;
+    }
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px 20px;
+    align-items: flex-start;
+
+    @include big-desktop {
+      gap: 20px;
+    }
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+}

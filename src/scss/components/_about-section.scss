@@ -1,0 +1,128 @@
+.about-section {
+  margin-bottom: 105px;
+
+  @include big-desktop {
+    margin-bottom: 60px;
+  }
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 75px;
+
+    @include big-desktop {
+      margin-bottom: 60px;
+    }
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content {
+    padding: 44px 81px 56px 95px;
+    background-color: #fff;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+
+    @include tablet {
+      padding: 40px;
+    }
+
+    @include mobile {
+      padding: 20px 10px;
+    }
+  }
+
+  &__left {
+    width: 100%;
+    max-width: 750px;
+  }
+
+  &__name {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    color: #e9331d;
+
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+
+    @include big-desktop {
+      margin-bottom: 26px;
+    }
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__desc {
+    font-family: var(--font6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #8a9397;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+
+      @include big-desktop {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__logo {
+    flex: 1 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e2e2e2;
+    border-radius: 20px;
+    background: #fff;
+    aspect-ratio: 4 / 3;
+
+    @include tablet {
+      flex: unset;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 0px 20px;
+    }
+
+    img {
+      height: 110px;
+      width: auto;
+      object-fit: contain;
+
+      @include tablet {
+        height: 30px;
+      }
+
+      @include mobile {
+        height: 25px;
+      }
+    }
+  }
+}

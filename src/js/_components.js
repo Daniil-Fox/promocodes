@@ -1,0 +1,5 @@
+import './components/sliders'
+import './components/popup'
+import './components/promo'
+import './components/search'
+import './components/accordion'

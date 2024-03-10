@@ -1,0 +1,118 @@
+.header {
+  padding: 32.5px 0;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.07);
+  background: #fff;
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+  &__logo {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 20px;
+    color: #323232;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    @include big-desktop {
+      font-size: 18px;
+      gap: 10px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 30px;
+      color: #e9331d;
+
+      @include big-desktop {
+        font-size: 24px;
+        gap: 10px;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__link {
+    font-family: var(--font5);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: #2c2c2c;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    @include big-desktop {
+      font-size: 16px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      position: absolute;
+      left: 20px;
+      bottom: 5px;
+    }
+
+    @include small-tablet {
+      left: unset;
+      right: 30px;
+    }
+  }
+
+
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include big-desktop {
+      gap: 10px;
+    }
+
+    // @include small-tablet {
+    //   flex-direction: column;
+    //   align-items: stretch;
+    //   gap: 4px;
+    // }
+  }
+
+  &__btn {
+    display: inline-block;
+
+    @media (max-width: 1200px) {
+      padding: 14.5px 30px;
+    }
+
+    @include small-tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  &__btn {
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+
+    border-bottom: 3px solid #e3e3e3;
+    border-right: 3px solid #e3e3e3;
+    cursor: pointer;
+
+    &--prev {
+      transform: rotate(135deg);
+    }
+
+    &--next {
+      transform: rotate(-45deg);
+    }
+  }
+}

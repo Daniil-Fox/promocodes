@@ -1,0 +1,286 @@
+.promos-content {
+  &__title {
+    display: block;
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #505050;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 850px) {
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include tablet {
+      gap: 20px;
+    }
+  }
+
+  &__btn {
+    font-weight: 700;
+    font-size: 16px;
+    color: #505050;
+
+    &.active {
+      color: #e9331d;
+      text-decoration: underline;
+    }
+  }
+
+  &__add {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #e9331d;
+
+    @include mobile {
+      align-self: flex-end;
+    }
+
+    svg {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+    }
+  }
+
+  &__items {
+    &:not(:last-child) {
+      margin-bottom: 75px;
+
+      @include big-desktop {
+        margin-bottom: 60px;
+      }
+
+      @include tablet {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+
+      @media (max-width: 850px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .promo-item {
+      &__top {
+        padding-top: 26px;
+        padding-left: 10px;
+        padding-bottom: 16px;
+        padding-right: 60px;
+
+        @media (max-width: 850px) {
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+.promos-table {
+  width: 100%;
+
+  tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    gap: 20px;
+
+    @media (max-width: 850px) {
+      padding: 10px 0;
+      gap: 15px;
+    }
+
+    @include mobile {
+      gap: 5px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+
+  th,
+  td {
+    text-align: left;
+
+    &:nth-child(1) {
+      width: 17%;
+
+      @include mobile {
+        width: 24%;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 60%;
+
+      @include mobile {
+        width: 50%;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 19.6%;
+    }
+  }
+
+  caption {
+    margin-bottom: 38px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+    color: #505050;
+
+    @include small-tablet {
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  thead {
+    display: block;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+    padding: 35px 55px;
+    padding-bottom: 0;
+
+    @include tablet {
+      padding: 20px 30px;
+      padding-bottom: 0;
+    }
+
+    @include mobile {
+      padding: 15px;
+      padding-bottom: 0;
+    }
+
+    tr {
+      border-bottom: 1px solid #d9d9d9;
+
+      th {
+        font-weight: 700;
+        font-size: 18px;
+        color: #505050;
+        white-space: nowrap;
+
+        @include mobile {
+          font-size: 15px;
+        }
+
+        @media (max-width: 375px) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    display: block;
+    border-radius: 0 0 20px 20px;
+    background-color: #fff;
+    padding: 35px 55px;
+    padding-top: 0;
+
+    @include tablet {
+      padding: 20px 30px;
+      padding-top: 0;
+    }
+
+    @include mobile {
+      padding: 15px;
+      padding-top: 0;
+    }
+
+    tr {
+      td {
+        &:nth-child(1) {
+          font-weight: 700;
+          font-size: 16px;
+          color: #e9331d;
+
+          @include mobile {
+            font-size: 14px;
+          }
+
+          @media (max-width: 375px) {
+            font-size: 11px;
+          }
+        }
+
+        &:nth-child(2) {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #505050;
+
+          @include mobile {
+            font-size: 12px;
+          }
+
+          @media (max-width: 375px) {
+            font-size: 11px;
+          }
+        }
+
+        &:nth-child(3) {
+          font-weight: 500;
+          font-size: 18px;
+          color: #505050;
+
+          @include mobile {
+            font-size: 15px;
+          }
+
+          @media (max-width: 375px) {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+
+}
