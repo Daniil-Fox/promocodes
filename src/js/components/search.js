@@ -1,4 +1,4 @@
-const api = './../stores.json'
+const api = './../data.json'
 const stores = []
 
 fetch(api)
