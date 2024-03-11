@@ -40,12 +40,25 @@ popupBody.addEventListener('click', e => {
 })
 
 const copyBtn = document.querySelector("[data-popup-copy]")
-copyBtn.addEventListener("click", function() {
-  const value = document.querySelector("[data-popup-value]")
-  navigator.clipboard.writeText(value.innerText).then(function() {
-    copyBtn.textContent = 'Скопировано!'
-    copyBtn.classList.add('active')
-  }).catch(function(error) {
-      console.error('Error:', error);
-  });
+// copyBtn.addEventListener("click", function() {
+//   const value = document.querySelector("[data-popup-value] span")
+//   navigator.clipboard.writeText(value.innerText).then(function() {
+//     copyBtn.textContent = 'Скопировано!'
+//     copyBtn.classList.add('active')
+//   }).catch(function(error) {
+//       console.error('Error:', error);
+//   });
+// });
+import ClipboardJS from "clipboard"
+var clipboard = new ClipboardJS(copyBtn);
+clipboard.on('success', function (e) {
+  copyBtn.textContent = 'Скопировано!'
+  copyBtn.classList.add('active')
+  e.clearSelection();
 });
+
+clipboard.on('error', function (e) {
+  console.error('Error:', error);
+});
+
+

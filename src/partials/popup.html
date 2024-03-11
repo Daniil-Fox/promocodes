@@ -11,9 +11,10 @@
     <span class="popup__copy">Скопируйте и вставьте на сайте <a href="">site.ru</a></span>
     <div class="popup__info">
       <div class="popup__promo" data-popup-value>
-        <span>124FHSD</span>
+        <span id="bar">124FHSD</span>
       </div>
-      <button class="btn-reset btn btn--red popup__btn" data-popup-copy>Скопировать</button>
+      <button class="btn-reset btn btn--red popup__btn" data-popup-copy
+        data-clipboard-target="#bar">Скопировать</button>
     </div>
     <span class="popup__question">Этот купон сработал для Вас?</span>
     <form action="post" class="popup__form">
