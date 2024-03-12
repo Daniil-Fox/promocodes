@@ -622,6 +622,11 @@ a {
     font-size: 14px;
   }
 }
+@media (max-width: 576px) {
+  .header__link {
+    font-size: 10px;
+  }
+}
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
