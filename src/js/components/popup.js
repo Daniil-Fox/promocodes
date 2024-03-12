@@ -12,7 +12,7 @@ popupBtns.forEach(btn => {
     btnPromo.style.justifyContent = 'center'
     activeRed = btnRed.classList.add('active')
   })
-
+  if(window.matchMedia('(min-width: 768px)').matches){
     btn.addEventListener('mouseenter', e => {
       if(activeRed) return
       btnRed.textContent = 'Открыть промкод'
@@ -21,6 +21,7 @@ popupBtns.forEach(btn => {
       if(activeRed) return
       btnRed.textContent = 'Воспользоваться'
     })
+  }
 
 })
 popup.addEventListener('click', e => {
@@ -40,15 +41,7 @@ popupBody.addEventListener('click', e => {
 })
 
 const copyBtn = document.querySelector("[data-popup-copy]")
-// copyBtn.addEventListener("click", function() {
-//   const value = document.querySelector("[data-popup-value] span")
-//   navigator.clipboard.writeText(value.innerText).then(function() {
-//     copyBtn.textContent = 'Скопировано!'
-//     copyBtn.classList.add('active')
-//   }).catch(function(error) {
-//       console.error('Error:', error);
-//   });
-// });
+
 import ClipboardJS from "clipboard"
 var clipboard = new ClipboardJS(copyBtn);
 clipboard.on('success', function (e) {

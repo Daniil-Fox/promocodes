@@ -1645,6 +1645,14 @@ a {
 .promo-item__use svg {
   display: none;
 }
+@media (max-width: 576px) {
+  .promo-item__use svg {
+    display: block;
+    width: 14px;
+    height: 14px;
+    fill: #fff;
+  }
+}
 @media (max-width: 1440px) {
   .promo-item__use {
     padding: 20px 26px;
@@ -1660,14 +1668,10 @@ a {
     padding: 5px;
     font-size: 14px;
   }
+}
+@media (max-width: 576px) {
   .promo-item__use span {
-    display: none;
-  }
-  .promo-item__use svg {
-    display: block;
-    width: 14px;
-    height: 14px;
-    fill: #fff;
+    display: none !important;
   }
 }
 @media (max-width: 375px) {

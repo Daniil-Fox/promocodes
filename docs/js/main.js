@@ -202,14 +202,16 @@ popupBtns.forEach(btn => {
     btnPromo.style.justifyContent = 'center';
     activeRed = btnRed.classList.add('active');
   });
-  btn.addEventListener('mouseenter', e => {
-    if (activeRed) return;
-    btnRed.textContent = 'Открыть промкод';
-  });
-  btn.addEventListener('mouseleave', e => {
-    if (activeRed) return;
-    btnRed.textContent = 'Воспользоваться';
-  });
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    btn.addEventListener('mouseenter', e => {
+      if (activeRed) return;
+      btnRed.textContent = 'Открыть промкод';
+    });
+    btn.addEventListener('mouseleave', e => {
+      if (activeRed) return;
+      btnRed.textContent = 'Воспользоваться';
+    });
+  }
 });
 popup.addEventListener('click', e => {
   e.preventDefault();
@@ -225,15 +227,6 @@ popupBody.addEventListener('click', e => {
   e.stopPropagation();
 });
 const copyBtn = document.querySelector("[data-popup-copy]");
-// copyBtn.addEventListener("click", function() {
-//   const value = document.querySelector("[data-popup-value] span")
-//   navigator.clipboard.writeText(value.innerText).then(function() {
-//     copyBtn.textContent = 'Скопировано!'
-//     copyBtn.classList.add('active')
-//   }).catch(function(error) {
-//       console.error('Error:', error);
-//   });
-// });
 
 var clipboard = new (clipboard__WEBPACK_IMPORTED_MODULE_0___default())(copyBtn);
 clipboard.on('success', function (e) {

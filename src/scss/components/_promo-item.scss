@@ -254,6 +254,13 @@
 
     svg {
       display: none;
+
+      @include mobile {
+        display: block;
+        width: 14px;
+        height: 14px;
+        fill: #fff;
+      }
     }
 
     @include big-desktop {
@@ -267,20 +274,13 @@
     @include mobile {
       padding: 5px;
       font-size: 14px;
-
-      span {
-        display: none;
-      }
-
-      svg {
-        display: block;
-        width: 14px;
-        height: 14px;
-        fill: #fff;
-      }
     }
 
-
+    span {
+      @include mobile {
+        display: none !important;
+      }
+    }
 
     @media (max-width: 375px) {
       font-size: 11px;
