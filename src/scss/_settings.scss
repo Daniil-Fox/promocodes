@@ -112,9 +112,9 @@ a {
   display: inline-flex;
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   color: #2c2c2c;
-  padding: 16px 44px;
+  padding: 14px 40px;
   align-items: center;
   justify-content: center;
   background-color: #f8f8f8;
@@ -122,9 +122,6 @@ a {
   overflow: hidden;
   transition: color .3s ease-out, background-color .3s ease-out;
 
-  @include big-desktop {
-    padding: 16px 40px;
-  }
 
   @include mobile {
     padding: 12px 20px;
@@ -155,16 +152,16 @@ a {
   margin: 0;
   font-family: var(--third-family);
   font-weight: 600;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 128%;
   color: #161616;
 
   @include tablet {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   @include mobile {
-    font-size: 28px;
+    font-size: 26px;
   }
 
 }

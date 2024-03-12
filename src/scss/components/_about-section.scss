@@ -1,28 +1,16 @@
 .about-section {
-  margin-bottom: 105px;
-
-  @include big-desktop {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
 
   @include tablet {
     margin-bottom: 40px;
   }
 
   &__title {
-    margin-bottom: 75px;
-
-    @include big-desktop {
-      margin-bottom: 60px;
-    }
-
-    @include tablet {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 20px;
   }
 
   &__content {
-    padding: 44px 81px 56px 95px;
+    padding: 40px 60px;
     background-color: #fff;
     border-radius: 20px;
 

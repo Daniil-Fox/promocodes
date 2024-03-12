@@ -1,27 +1,19 @@
 .about {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
 
   @include tablet {
     order: 4;
   }
 
-  @include small-tablet {
-    margin-bottom: 20px;
-  }
-
   &__title {
-    margin-bottom: 30px;
-
-    @include small-tablet {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
   }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px 100px;
+    gap: 20px 60px;
 
     @include big-desktop {
       gap: 20px 40px;
@@ -36,13 +28,9 @@
     margin: 0;
     font-family: var(--font4);
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 157%;
     color: #767676;
-
-    @include big-desktop {
-      font-size: 20px;
-    }
 
     @include tablet {
       font-size: 16px;

@@ -13,13 +13,9 @@
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-    padding: 25px 37px;
+    padding: 20px 30px;
 
     cursor: pointer;
-
-    @include big-desktop {
-      padding: 30px;
-    }
 
     @include tablet {
       padding: 20px;
@@ -42,12 +38,8 @@
 
   &__discount {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 40px;
     color: #e9331d;
-
-    @include big-desktop {
-      font-size: 40px;
-    }
 
     @include tablet {
       font-size: 30px;
@@ -66,13 +58,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 92px;
-    height: 92px;
+    width: 80px;
+    height: 80px;
 
-    @include big-desktop {
-      width: 80px;
-      height: 80px;
-    }
 
     svg {
       width: 50%;
@@ -145,15 +133,10 @@
 
   &__name {
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     color: #e9331d;
-
-    @include tablet {
-      font-size: 18px;
-      margin-bottom: 4px;
-    }
 
     @include mobile {
       font-size: 14px;
@@ -162,15 +145,11 @@
 
   &__desc {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     color: #505050;
 
-    @include big-desktop {
-      font-size: 26px;
-      margin-bottom: 15px;
-    }
 
     @include tablet {
       font-size: 22px;
@@ -190,12 +169,9 @@
   &__time {
     display: block;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     color: #b1b1b1;
 
-    @include big-desktop {
-      font-size: 14px;
-    }
 
     @include mobile {
       font-size: 10px;
@@ -203,18 +179,14 @@
   }
 
   &__btn {
-    padding: 28px 34px;
+    padding: 22px 30px;
     border-radius: 50px;
     position: relative;
 
 
-    width: 216px;
-    height: 64px;
+    width: 200px;
+    height: 60px;
 
-    @include big-desktop {
-      width: 200px;
-      padding: 20px 26px;
-    }
 
     @include tablet {
       padding: 16px 20px;

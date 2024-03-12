@@ -1,23 +1,14 @@
 .promo {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
 
   @include tablet {
     order: 2;
   }
 
-  @include small-tablet {
-    padding-top: 20px;
-  }
 
   &__title {
-
-    margin-bottom: 30px;
-
-
-    @include small-tablet {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
   }
 
   &__items {

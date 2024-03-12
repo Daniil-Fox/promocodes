@@ -1,5 +1,5 @@
 .promos-about {
-  padding: 45px;
+  padding: 20px 45px;
 
   @include tablet {
     padding: 20px;
@@ -19,7 +19,7 @@
 
   &__logo {
     margin: 0 auto;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     padding: 20px;
     background: #fff;
     border: 2px solid #e2e2e2;
@@ -63,17 +63,14 @@
 
   &__title {
     display: block;
-    max-width: 250px;
+    max-width: 220px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     color: #505050;
 
-    @media (max-width: 850px) {
-      margin-bottom: 20px;
-    }
 
     @include mobile {
       font-size: 18px;

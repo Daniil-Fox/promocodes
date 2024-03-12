@@ -7,9 +7,9 @@
   }
 
   &__icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 18px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
     background-color: #f2f3f7;
     border-radius: 100%;
     overflow: hidden;
@@ -17,11 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @include mobile {
-      width: 50px;
-      height: 50px;
-    }
 
     svg {
       width: 50%;
@@ -35,17 +30,13 @@
     margin-bottom: 14px;
     font-family: var(--third-family);
     font-weight: 600;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 114%;
     color: #2c2c2c;
     max-width: 245px;
 
-    @include big-desktop {
-      margin-bottom: 14px;
-    }
-
     @include tablet {
-      font-size: 26px;
+      font-size: 20px;
       margin-bottom: 12px;
     }
 
@@ -54,7 +45,6 @@
     }
 
     @include mobile {
-      font-size: 24px;
       margin-bottom: 8px;
     }
   }
@@ -63,12 +53,8 @@
     margin: 0;
     font-family: var(--third-family);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 133%;
     color: #747474;
-
-    @include tablet {
-      font-size: 16px;
-    }
   }
 }
