@@ -50,8 +50,14 @@
     </form>
 
     <div class="header__buttons">
-      <a href="#" class="header__btn btn btn--red btn-reset">Вход</a>
-      <a href="#" class="header__btn btn btn-reset">Регистрация</a>
+      <a href="#" class="header__btn btn btn--red btn-reset">
+        <span>Вход</span>
+        <img src="./img/login.png" alt="">
+      </a>
+      <a href="#" class="header__btn btn btn-reset">
+        <span>Регистрация</span>
+        <img src="./img/exit.png" alt="">
+      </a>
     </div>
   </div>
 </header>
@@ -59,7 +65,7 @@
       <div class="promos-container grid">
         <div class="grid-sizer"></div>
         <h1 class="promos-title grid-item">Промокоды Asos на сентябрь 2022</h1>
-        <div class="grid-item promos-about-sidebar">
+        <div class="grid-item promos-about-sidebar promos-about-sidebar--main">
           <section class="promos-about sidebar">
   <div class="promos-about__logo">
     <img src="./img/stores/01.svg" alt="ASOS">
@@ -72,10 +78,12 @@
 </section>
           <div class="promos-chars sidebar">
   <h2 class="promos-chars__title">О магазине</h2>
-  <p class="promos-chars__desc">
-    Таким образом новая модель организационной деятельности представляет собой интересный эксперимент проверки систем
-    массового участия. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности
-    влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.
+  <p class="promos-chars__desc text-block">
+    Таким образом новая модель организационной деятельности<span class="dots">…</span><span class="more"> представляет
+      собой интересный эксперимент проверки систем
+      массового участия. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности
+      влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</span><span
+      class="read-more"> Читать далее</span>
   </p>
 </div>
         </div>
@@ -111,7 +119,10 @@
         </div>
         <button class="btn-reset promo-item__btn">
           <span class="promo-item__use">
-            Воспользоваться
+            <span>Воспользоваться</span>
+            <svg class="">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
           </span>
           <span class="promo-item__promo">
             124FHSD
@@ -144,7 +155,10 @@
         </div>
         <button class="btn-reset promo-item__btn">
           <span class="promo-item__use">
-            Воспользоваться
+            <span>Воспользоваться</span>
+            <svg class="">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
           </span>
           <span class="promo-item__promo">
             124FHSD
@@ -177,7 +191,10 @@
         </div>
         <button class="btn-reset promo-item__btn">
           <span class="promo-item__use">
-            Воспользоваться
+            <span>Воспользоваться</span>
+            <svg class="">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
           </span>
           <span class="promo-item__promo">
             124FHSD
@@ -214,7 +231,10 @@
         </div>
         <button class="btn-reset promo-item__btn">
           <span class="promo-item__use">
-            Воспользоваться
+            <span>Воспользоваться</span>
+            <svg class="">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
           </span>
           <span class="promo-item__promo">
             124FHSD
@@ -251,7 +271,10 @@
         </div>
         <button class="btn-reset promo-item__btn">
           <span class="promo-item__use">
-            Воспользоваться
+            <span>Воспользоваться</span>
+            <svg class="">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
           </span>
           <span class="promo-item__promo">
             124FHSD
@@ -293,7 +316,10 @@
         </div>
         <button class="btn-reset promo-item__btn promo-item__btn--gray">
           <span class="promo-item__use">
-            Воспользоваться
+            <span>Воспользоваться</span>
+            <svg class="">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
           </span>
           <span class="promo-item__promo">
             124FHSD
@@ -331,7 +357,10 @@
         </div>
         <button class="btn-reset promo-item__btn promo-item__btn--gray">
           <span class="promo-item__use">
-            Воспользоваться
+            <span>Воспользоваться</span>
+            <svg class="">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
           </span>
           <span class="promo-item__promo">
             124FHSD
@@ -372,7 +401,10 @@
         </div>
         <button class="btn-reset promo-item__btn">
           <span class="promo-item__use">
-            Воспользоваться
+            <span>Воспользоваться</span>
+            <svg class="">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
           </span>
           <span class="promo-item__promo">
             124FHSD
@@ -408,7 +440,10 @@
         </div>
         <button class="btn-reset promo-item__btn">
           <span class="promo-item__use">
-            Воспользоваться
+            <span>Воспользоваться</span>
+            <svg class="">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
           </span>
           <span class="promo-item__promo">
             124FHSD
@@ -686,7 +721,7 @@
 
     <form action="post" class="cta__form cta-form">
       <label class="cta-form__label">
-        <input type="text" class="form__input cta-form__input" placeholder="Введите ваш e-mail">
+        <input type="text" class="cta-form__input" placeholder="Введите ваш e-mail">
       </label>
       <button class="btn-reset btn btn--red cta-form__btn">Подписаться</button>
     </form>

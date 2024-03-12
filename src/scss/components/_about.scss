@@ -1,9 +1,6 @@
 .about {
-  margin-bottom: 90px;
+  margin-bottom: 40px;
 
-  @include big-desktop {
-    margin-bottom: 60px;
-  }
 
   @include tablet {
     order: 4;
@@ -15,11 +12,7 @@
   }
 
   &__title {
-    margin-bottom: 70px;
-
-    @include big-desktop {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
 
     @include small-tablet {
       margin-bottom: 20px;

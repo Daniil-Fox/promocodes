@@ -66,12 +66,19 @@
 
     @include mobile {
       align-self: flex-end;
+
+      font-size: 12px;
     }
 
     svg {
       width: 22px;
       height: 22px;
       object-fit: contain;
+
+      @include mobile {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 

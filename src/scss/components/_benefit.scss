@@ -7,9 +7,9 @@
   }
 
   &__icon {
-    margin-bottom: 23px;
-    width: 67px;
-    height: 67px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 18px;
     background-color: #f2f3f7;
     border-radius: 100%;
     overflow: hidden;
@@ -17,12 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @include big-desktop {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 18px;
-    }
 
     @include mobile {
       width: 50px;
@@ -38,21 +32,20 @@
 
   &__title {
     display: block;
-    margin-bottom: 17px;
+    margin-bottom: 14px;
     font-family: var(--third-family);
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 114%;
     color: #2c2c2c;
     max-width: 245px;
 
     @include big-desktop {
-      font-size: 36px;
       margin-bottom: 14px;
     }
 
     @include tablet {
-      font-size: 30px;
+      font-size: 26px;
       margin-bottom: 12px;
     }
 
@@ -61,7 +54,7 @@
     }
 
     @include mobile {
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 8px;
     }
   }

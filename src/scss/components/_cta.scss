@@ -1,5 +1,5 @@
 .cta {
-  padding: 92px 0;
+  padding: 80px 0;
   background-color: #fff;
 
   text-align: center;
@@ -22,8 +22,10 @@
 
   &__title {
     margin: 0 auto;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     max-width: 488px;
+
+    line-height: 1.05;
 
     @include small-tablet {
       margin-bottom: 20px;
@@ -63,16 +65,54 @@
     background-color: #fafafa;
     border-radius: 68px;
     padding: 12px 48px;
+    border: none;
+    background: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+    background: #f4f4f4;
+    transition: width .3s ease-out, background .3s ease-in;
+
+    @media (max-width: 1200px) {
+      padding: 16px 28px;
+    }
+
+    &::placeholder {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    &:focus {
+      outline: none;
+      width: 100%;
+
+      @include small-tablet {
+        width: 100%;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
 
     @include mobile {
       padding: 16px 24px;
+      width: 100%;
     }
 
   }
 
   &__btn {
-    border-radius: 86px;
-    padding: 25px 45px;
+    border-radius: 75px;
+    padding: 22px 40px;
 
     @include mobile {
       padding: 16px 24px;

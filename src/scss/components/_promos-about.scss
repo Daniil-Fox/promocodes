@@ -7,6 +7,14 @@
 
   @include mobile {
     padding: 0;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    @include mobile {
+      display: none;
+
+    }
   }
 
   &__logo {
@@ -22,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 
     img {
       width: 142px;
@@ -31,12 +40,24 @@
       @media (max-width: 850px) {
         width: 120px;
       }
+
+      @include mobile {
+        width: auto;
+        height: 20px;
+      }
     }
 
     @media (max-width: 850px) {
       height: 130px;
       max-width: 250px;
       margin-bottom: 16px;
+    }
+
+    @include mobile {
+      flex-shrink: 0;
+      padding: 10px;
+      height: auto;
+      border-radius: 10px;
     }
   }
 
@@ -128,4 +149,6 @@
     }
 
   }
+
+
 }

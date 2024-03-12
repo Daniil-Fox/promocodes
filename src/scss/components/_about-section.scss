@@ -28,6 +28,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
     position: relative;
 
@@ -62,13 +63,13 @@
 
   &__link {
     display: inline-block;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     color: #505050;
 
     @include big-desktop {
-      margin-bottom: 26px;
+      margin-bottom: 24px;
     }
 
     @include tablet {
@@ -77,6 +78,7 @@
   }
 
   &__desc {
+    margin: 0;
     font-family: var(--font6);
     font-weight: 400;
     font-size: 16px;
@@ -84,16 +86,17 @@
     color: #8a9397;
 
     &:not(:last-child) {
-      margin-bottom: 35px;
+      margin-bottom: 22px;
 
       @include big-desktop {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
       }
     }
   }
 
   &__logo {
     flex: 1 0 auto;
+    max-width: 500px;
     padding: 40px;
     display: flex;
     align-items: center;
@@ -112,7 +115,7 @@
     }
 
     img {
-      height: 110px;
+      height: 90px;
       width: auto;
       object-fit: contain;
 

@@ -114,7 +114,7 @@ a {
   font-weight: 700;
   font-size: 16px;
   color: #2c2c2c;
-  padding: 18px 48px;
+  padding: 16px 44px;
   align-items: center;
   justify-content: center;
   background-color: #f8f8f8;
@@ -155,20 +155,16 @@ a {
   margin: 0;
   font-family: var(--third-family);
   font-weight: 600;
-  font-size: 69px;
+  font-size: 40px;
   line-height: 128%;
   color: #161616;
 
-  @include big-desktop {
-    font-size: 48px;
-  }
-
   @include tablet {
-    font-size: 38px;
+    font-size: 34px;
   }
 
   @include mobile {
-    font-size: 34px;
+    font-size: 28px;
   }
 
 }
@@ -183,19 +179,19 @@ a {
 }
 
 .promos-container {
-  padding-top: 120px;
+  padding-top: 90px;
   max-width: var(--container-width);
 
   margin: 0 auto;
   margin-bottom: 90px;
 
   @include big-desktop {
-    padding-top: 80px;
+    padding-top: 60px;
     margin-bottom: 60px;
   }
 
   @include tablet {
-    padding-top: 60px;
+    padding-top: 40px;
     margin-bottom: 40px;
   }
 
@@ -206,7 +202,7 @@ a {
   }
 
   @include small-tablet {
-    padding-top: 40px;
+    padding-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -280,7 +276,7 @@ a {
 
   @include small-tablet {
     font-size: 28px;
-    max-width: 250px;
+    // max-width: 250px;
     margin: 0 auto;
   }
 
@@ -305,6 +301,44 @@ a {
 
   @include mobile {
     grid-template-columns: 1fr;
-    gap: 10px;
   }
+
+  &--main {
+    @include mobile {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .promos-chars {
+
+      .read-more,
+      .dots {
+        display: none;
+      }
+
+      .more {
+        display: inline;
+      }
+
+      @include mobile {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        .read-more,
+        .dots {
+          display: inline;
+        }
+
+        .more {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+
 }
