@@ -1,12 +1,8 @@
 .stores {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @include tablet {
     order: 5;
-  }
-
-  @include tablet {
-    margin-bottom: 40px;
   }
 
   @include small-tablet {
@@ -14,11 +10,9 @@
   }
 
   &__title {
-    margin-bottom: 75px;
 
-    @include big-desktop {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 30px;
+
 
     @include small-tablet {
       margin-bottom: 20px;

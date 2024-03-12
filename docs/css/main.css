@@ -949,7 +949,7 @@ a {
 
 .hero {
   background-color: #f9f9f9;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1024px) {
   .hero {
@@ -993,7 +993,7 @@ a {
   }
 }
 .hero__content {
-  padding: 103px 0 108px;
+  padding: 100px 0 100px;
   padding-left: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1162,7 +1162,7 @@ a {
 }
 
 .benefits {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1024px) {
   .benefits {
@@ -1177,12 +1177,7 @@ a {
   }
 }
 .benefits__title {
-  margin-bottom: 75px;
-}
-@media (max-width: 1440px) {
-  .benefits__title {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .benefits__title {
@@ -1307,7 +1302,7 @@ a {
 }
 
 .promo {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1024px) {
   .promo {
@@ -1322,7 +1317,7 @@ a {
   }
 }
 .promo__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .promo__title {
@@ -1785,14 +1780,13 @@ a {
 }
 
 .about {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1024px) {
   .about {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
-    margin-bottom: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -1801,7 +1795,7 @@ a {
   }
 }
 .about__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .about__title {
@@ -1846,7 +1840,7 @@ a {
 }
 
 .stores {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1024px) {
   .stores {
@@ -1855,23 +1849,13 @@ a {
     order: 5;
   }
 }
-@media (max-width: 1024px) {
-  .stores {
-    margin-bottom: 40px;
-  }
-}
 @media (max-width: 768px) {
   .stores {
     margin-bottom: 20px;
   }
 }
 .stores__title {
-  margin-bottom: 75px;
-}
-@media (max-width: 1440px) {
-  .stores__title {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .stores__title {
@@ -1959,7 +1943,7 @@ a {
 }
 
 .cta {
-  padding: 80px 0;
+  padding: 60px 0;
   background-color: #fff;
   text-align: center;
   display: -webkit-box;
@@ -1975,11 +1959,6 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-@media (max-width: 1440px) {
-  .cta {
-    padding: 60px 0;
-  }
 }
 @media (max-width: 1024px) {
   .cta {

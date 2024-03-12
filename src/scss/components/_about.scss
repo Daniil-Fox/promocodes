@@ -1,10 +1,9 @@
 .about {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
 
   @include tablet {
     order: 4;
-    margin-bottom: 40px;
   }
 
   @include small-tablet {
@@ -12,7 +11,7 @@
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     @include small-tablet {
       margin-bottom: 20px;
