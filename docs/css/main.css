@@ -1313,6 +1313,9 @@ a {
 .promo-item--short .promo-item__use svg {
   display: block !important;
 }
+.promo-item--short .promo-item__use span {
+  display: none !important;
+}
 @media (max-width: 576px) {
   .promo-item {
     border-radius: 15px;
