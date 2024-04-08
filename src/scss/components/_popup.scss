@@ -19,16 +19,14 @@
   &__body {
     position: relative;
     width: 100%;
-    height: 100%;
     max-width: 750px;
-    max-height: 536px;
     background-color: #fff;
     border-radius: 50px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 77px 65px 42px 76px;
+    padding: 42px 65px;
 
 
 
@@ -111,7 +109,12 @@
     }
   }
 
+
+
   &__promo {
+
+
+
     position: relative;
     z-index: 3;
     width: 60%;
@@ -124,11 +127,20 @@
     border-radius: 26px;
     background-color: #fff;
 
+    ::-webkit-scrollbar {
+
+      height: 2px;
+    }
+
     span {
       font-weight: 500;
       font-size: 20px;
       text-align: center;
       color: #e9331d;
+      overflow-x: auto;
+      overflow-y: hidden;
+
+
     }
   }
 
@@ -164,10 +176,13 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-bottom: 50px;
 
-    @include mobile {
-      margin-bottom: 20px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
     }
 
     input {

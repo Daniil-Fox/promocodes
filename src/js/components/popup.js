@@ -9,19 +9,19 @@ popupBtns.forEach(btn => {
   btn.addEventListener('click', e => {
     popup.classList.add('active')
     btnRed.style.display = 'none'
-    btnPromo.style.justifyContent = 'center'
+
     activeRed = btnRed.classList.add('active')
   })
-  if(window.matchMedia('(min-width: 768px)').matches){
-    btn.addEventListener('mouseenter', e => {
-      if(activeRed) return
-      btnRed.textContent = 'Открыть промкод'
-    })
-    btn.addEventListener('mouseleave', e => {
-      if(activeRed) return
-      btnRed.textContent = 'Воспользоваться'
-    })
-  }
+  // if(window.matchMedia('(min-width: 768px)').matches){
+  //   btn.addEventListener('mouseenter', e => {
+  //     if(activeRed) return
+  //     btnRed.textContent = 'Открыть промкод'
+  //   })
+  //   btn.addEventListener('mouseleave', e => {
+  //     if(activeRed) return
+  //     btnRed.textContent = 'Воспользоваться'
+  //   })
+  // }
 
 })
 popup.addEventListener('click', e => {

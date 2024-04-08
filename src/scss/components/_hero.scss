@@ -39,9 +39,7 @@
   }
 
   &__content {
-    padding: 80px 0;
-    padding-left: 90px;
-    padding-right: 30px;
+    padding: 80px 90px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,7 +58,7 @@
   &__image {
     position: absolute;
     z-index: -1;
-    right: 0;
+    right: 100px;
     // top: 50%;
     // transform: translateY(-50%);
     bottom: -20px;

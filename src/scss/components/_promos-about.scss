@@ -19,7 +19,11 @@
 
   &__logo {
     margin: 0 auto;
-    margin-bottom: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
     padding: 20px;
     background: #fff;
     border: 2px solid #e2e2e2;
