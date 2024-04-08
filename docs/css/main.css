@@ -1635,10 +1635,10 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-right: 15px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 5px;
   border: 2px dashed #d61c4e;
   font-weight: 500;
   font-size: 16px;
@@ -1693,6 +1693,13 @@ a {
 .promo-item__btn--gray .promo-item__promo {
   border-color: #c7c4c5;
   color: #c7c4c5;
+}
+@media (any-hover: hover) {
+  .promo-item--akc:hover .promo-item__use {
+    -webkit-transform: translate(-5%, -50%);
+    -ms-transform: translate(-5%, -50%);
+    transform: translate(-5%, -50%);
+  }
 }
 
 .promo-more__header {
@@ -2283,7 +2290,7 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 12px 48px;
+  padding: 12px 12px;
   border: 2.58px dashed #e9331d;
   border-radius: 26px;
   background-color: #fff;
@@ -2298,6 +2305,7 @@ a {
   color: #e9331d;
   overflow-x: auto;
   overflow-y: hidden;
+  white-space: nowrap;
 }
 .popup__btn {
   position: absolute;

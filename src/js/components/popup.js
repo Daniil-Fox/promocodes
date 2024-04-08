@@ -9,7 +9,7 @@ popupBtns.forEach(btn => {
   btn.addEventListener('click', e => {
     popup.classList.add('active')
     btnRed.style.display = 'none'
-
+    btnPromo.style.justifyContent = 'center'
     activeRed = btnRed.classList.add('active')
   })
   // if(window.matchMedia('(min-width: 768px)').matches){
